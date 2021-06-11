@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {  
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: rgb(255, 30, 0);
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: rgb(0, 179, 255);
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+ 
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>陈广育</h1>
+      <img src="https://pic2.zhimg.com/v2-5dd9362efc9b3a13094a2a7f1a478841_xl.jpg" alt="" width="100" height="100">
+      <p>
+        男 | 25岁 |  广州
+      </p>
+      <p>求职意向：初级前端开发工程师</p>
+      <p>
+        手机：13607756099 |  微信同号
+    </p>
+        <p>邮箱：<a href="everyting-day@foxmail.com">everyting-day@foxmail.com</a> </p>
+      
+    </section>
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>简单记账</h3>
+            <span>
+              <a href="https://guang-yu6.github.io/money-vue/#/money">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+          </p>
+
+          <p>
+            这是一款极简的记账应用。这是我从自己的需求出发，特点是快速记账。
+          </p>
+          <p>
+            技术栈: Vue.js | Vue Cli | Vue Router | Sass | TypeScript | Day.js
+          </p>
+        </li>
+
+        <li>
+          <header>
+            <h3>简单记账React版-开发学习ing</h3>
+            <span>
+              <a href="https://github.com/Guang-Yu6/react-money">源码地址</a>
+            </span>
+          </header>
+          <p>
+            一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+          </p>
+
+          
+        </li>
+      </ol>
+    </section>
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>渐变色切换</h3>
+            <a href="https://guang-yu6.github.io/color-change-demo1/">项目预览</a>
+          </header>
+          <p>学习过程中用react写的一个网页渐变色切换demo</p>
+        </li>
+        <li>
+          <header>
+            <h3>前端导航</h3>
+            <a href="https://guang-yu6.github.io/nav-666/dist/index.html">项目预览</a>
+          </header>
+          <p>学习过程中用原生JS写的一个导航添加跳转demo</p>
+        </li>
+
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://guang-yu6.github.io/demo-canvas/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+
+        <li>
+            <header>
+              <h3>会动的页面</h3>
+              <a href="https://guang-yu6.github.io/cv-1/dist/index.html">项目预览</a>
+            </header>
+            <p>我在学习 <strong>定时器</strong> 时做的一个小作品</p>
+          </li>
+      </ul>
+    </section>
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+          <li>熟练使用 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟练使用 <strong>React</strong>，包括 create-react-app、ReactRouter 等</li>
+          <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值</li>
+          <li>了解<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由等</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://github.com/Guang-Yu6">我的 GitHub</a>-自学以来的练习</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2015.09</time>~<time>2018.07 | </time></span>
+        广西农职院 | 食品工程 | 大专
+      </p>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
